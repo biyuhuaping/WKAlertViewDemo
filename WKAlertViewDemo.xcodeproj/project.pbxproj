@@ -12,6 +12,9 @@
 		EA561B6B1AB0112900559D26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA561B6A1AB0112900559D26 /* Images.xcassets */; };
 		EA561B6E1AB0112900559D26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA561B6C1AB0112900559D26 /* LaunchScreen.xib */; };
 		EA561B7A1AB0112900559D26 /* WKAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA561B791AB0112900559D26 /* WKAlertViewDemoTests.m */; };
+		EA561B851AB0114100559D26 /* WKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA561B841AB0114100559D26 /* WKAlertView.m */; };
+		FB7CF3971DB5CD92001B157F /* ViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7CF3951DB5CD91001B157F /* ViewCtrl.m */; };
+		FB7CF3981DB5CD92001B157F /* ViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7CF3961DB5CD91001B157F /* ViewCtrl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 		EA561B731AB0112900559D26 /* WKAlertViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKAlertViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA561B781AB0112900559D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA561B791AB0112900559D26 /* WKAlertViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKAlertViewDemoTests.m; sourceTree = "<group>"; };
+		EA561B831AB0114100559D26 /* WKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKAlertView.h; sourceTree = "<group>"; };
+		EA561B841AB0114100559D26 /* WKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKAlertView.m; sourceTree = "<group>"; };
+		FB7CF3941DB5CD91001B157F /* ViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCtrl.h; sourceTree = "<group>"; };
+		FB7CF3951DB5CD91001B157F /* ViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCtrl.m; sourceTree = "<group>"; };
+		FB7CF3961DB5CD91001B157F /* ViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewCtrl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,11 @@
 			children = (
 				EA561B671AB0112900559D26 /* AppDelegate.h */,
 				EA561B681AB0112900559D26 /* AppDelegate.m */,
+				FB7CF3941DB5CD91001B157F /* ViewCtrl.h */,
+				FB7CF3951DB5CD91001B157F /* ViewCtrl.m */,
+				FB7CF3961DB5CD91001B157F /* ViewCtrl.xib */,
+				EA561B831AB0114100559D26 /* WKAlertView.h */,
+				EA561B841AB0114100559D26 /* WKAlertView.m */,
 				EA561B6A1AB0112900559D26 /* Images.xcassets */,
 				EA561B6C1AB0112900559D26 /* LaunchScreen.xib */,
 				EA561B631AB0112900559D26 /* Supporting Files */,
@@ -160,6 +173,8 @@
 				TargetAttributes = {
 					EA561B5F1AB0112900559D26 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = VED3V7289N;
+						ProvisioningStyle = Manual;
 					};
 					EA561B721AB0112900559D26 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -193,6 +208,7 @@
 			files = (
 				EA561B6E1AB0112900559D26 /* LaunchScreen.xib in Resources */,
 				EA561B6B1AB0112900559D26 /* Images.xcassets in Resources */,
+				FB7CF3981DB5CD92001B157F /* ViewCtrl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA561B851AB0114100559D26 /* WKAlertView.m in Sources */,
+				FB7CF3971DB5CD92001B157F /* ViewCtrl.m in Sources */,
 				EA561B691AB0112900559D26 /* AppDelegate.m in Sources */,
 				EA561B661AB0112900559D26 /* main.m in Sources */,
 			);
@@ -327,9 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VED3V7289N;
 				INFOPLIST_FILE = WKAlertViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzlh.jgrcapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "678f4a54-bf20-468c-9f8b-9c452220d7ea";
+				PROVISIONING_PROFILE_SPECIFIER = Auto_test;
 			};
 			name = Debug;
 		};
@@ -337,9 +360,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VED3V7289N;
 				INFOPLIST_FILE = WKAlertViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzlh.jgrcapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "678f4a54-bf20-468c-9f8b-9c452220d7ea";
+				PROVISIONING_PROFILE_SPECIFIER = Auto_test;
 			};
 			name = Release;
 		};
@@ -396,6 +424,7 @@
 				EA561B7F1AB0112900559D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA561B801AB0112900559D26 /* Build configuration list for PBXNativeTarget "WKAlertViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +433,7 @@
 				EA561B821AB0112900559D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
